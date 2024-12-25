@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;  /* Pastikan lebar input dan submit sama */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;  /* Pastikan padding tidak mempengaruhi ukuran */
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: 1px solid #4CAF50;  /* Border untuk submit sesuai dengan background */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Optional: Untuk menghilangkan margin pada form untuk rata kiri/kanan */
+        form {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Login Form</h1>
+        <form method="post">  <!-- POST untuk mengirim data ke server -->
+            <p>Enter Name:</p>
+            <input type="text" name="nm" required/>  <!-- Input untuk nama -->
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
